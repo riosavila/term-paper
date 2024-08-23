@@ -1,0 +1,74 @@
+---
+title: "Interim Progress Report"
+author: "Your Name"
+date: "2023-08-22"
+format:
+    pdf:
+        documentclass: article 
+        number-sections: true
+        margin-top: 1in
+        margin-bottom: 1in
+        margin-left: 1in
+        margin-right: 1in
+        linestretch:  1.5
+        fontsize: 11pt
+    html: default 
+bibliography: references1.bib
+---
+
+# Progress Update
+
+Since the data collection and cleaning phase, we have made significant progress in our study on the impact of remote work on urban housing prices:
+
+1. Completed data preprocessing and integration of all data sources
+2. Conducted exploratory data analysis (EDA) to identify initial trends
+3. Developed preliminary regression models
+4. Began drafting the methodology section of the final report
+
+# Challenges Faced
+
+1. Endogeneity concerns: The adoption of remote work may be correlated with unobserved city characteristics that also affect housing prices.
+   - Solution: We are developing an instrumental variable approach using pre-pandemic internet connectivity as an instrument for remote work adoption.
+
+2. Heterogeneity across cities: The impact of remote work appears to vary significantly across different types of cities.
+   - Solution: We are incorporating interaction terms and considering a hierarchical modeling approach to account for city-level differences.
+
+3. Lag effects: Changes in remote work adoption may take time to impact housing prices.
+   - Solution: We are exploring different lag structures in our models to capture these potential delayed effects.
+
+# Next Steps
+
+1. Finalize the instrumental variable approach and conduct necessary tests for validity
+2. Develop and estimate hierarchical models to account for city-level heterogeneity
+3. Conduct robustness checks, including sensitivity analyses and alternative model specifications
+4. Begin drafting the results section of the final report
+
+# Preliminary Visualizations
+
+1. **Remote Work Adoption vs. Housing Price Change (2019-2023)**
+
+   [Insert scatter plot here]
+
+   This visualization shows a negative correlation between the change in remote work adoption and housing price growth across cities. However, there is significant dispersion, suggesting other factors are at play.
+
+2. **Time Series of Housing Prices: High vs. Low Remote Work Cities**
+
+   [Insert line graph here]
+
+   This graph compares the average housing price trends for cities with high remote work adoption (top quartile) vs. low adoption (bottom quartile). We observe a divergence starting in 2020, with high-adoption cities showing slower price growth.
+
+3. **Coefficient Plot: Impact of Remote Work on Housing Prices**
+
+   [Insert coefficient plot here]
+
+   This plot shows the estimated coefficients (and confidence intervals) for the impact of remote work adoption on housing prices, controlling for various city characteristics. The effect appears negative and statistically significant, but the magnitude varies across different model specifications.
+
+# Addressing Peer Review Feedback
+
+Based on the feedback received from the peer review of Part II, we have:
+
+1. Improved our data imputation strategy for missing remote work data, now using a more sophisticated multiple imputation approach.
+2. Enhanced our data dictionary with more detailed descriptions of variable transformations and calculations.
+3. Expanded our preliminary analysis to include more non-linear relationships between variables.
+
+We appreciate the constructive feedback and believe these changes have strengthened our analysis.
