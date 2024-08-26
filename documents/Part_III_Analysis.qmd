@@ -22,6 +22,7 @@ Our primary model specification is a difference-in-differences (DiD) approach, l
 $$log(HousePrice)_{it} = β₀ + β₁RemoteWork_{it} + β₂Post_{t} + β₃(RemoteWork_{it} × Post_{t}) + γX_{it} + α_i + λ_t + ε_{it}$$
 
 Where:
+
 - $i$ indexes cities and t indexes years
 - $RemoteWork_{it}$ is the percentage of remote workers in city $i$ at time $t$
 - $Post_{t}$ is a dummy variable for the post-pandemic period (2020 onwards)

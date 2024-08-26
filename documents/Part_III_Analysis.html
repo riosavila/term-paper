@@ -110,7 +110,14 @@ window.Quarto = {
 <h1>Model Specification</h1>
 <p>Our primary model specification is a difference-in-differences (DiD) approach, leveraging the COVID-19 pandemic as an exogenous shock that dramatically increased remote work adoption. The basic specification is:</p>
 <p><span class="math display">\[log(HousePrice)_{it} = β₀ + β₁RemoteWork_{it} + β₂Post_{t} + β₃(RemoteWork_{it} × Post_{t}) + γX_{it} + α_i + λ_t + ε_{it}\]</span></p>
-<p>Where: - <span class="math inline">\(i\)</span> indexes cities and t indexes years - <span class="math inline">\(RemoteWork_{it}\)</span> is the percentage of remote workers in city <span class="math inline">\(i\)</span> at time <span class="math inline">\(t\)</span> - <span class="math inline">\(Post_{t}\)</span> is a dummy variable for the post-pandemic period (2020 onwards) - <span class="math inline">\(X_{it}\)</span> is a vector of control variables (population, unemployment rate, median income) - <span class="math inline">\(α_i\)</span> and <span class="math inline">\(λ_t\)</span> are city and year fixed effects, respectively</p>
+<p>Where:</p>
+<ul>
+<li><span class="math inline">\(i\)</span> indexes cities and t indexes years</li>
+<li><span class="math inline">\(RemoteWork_{it}\)</span> is the percentage of remote workers in city <span class="math inline">\(i\)</span> at time <span class="math inline">\(t\)</span></li>
+<li><span class="math inline">\(Post_{t}\)</span> is a dummy variable for the post-pandemic period (2020 onwards)</li>
+<li><span class="math inline">\(X_{it}\)</span> is a vector of control variables (population, unemployment rate, median income)</li>
+<li><span class="math inline">\(α_i\)</span> and <span class="math inline">\(λ_t\)</span> are city and year fixed effects, respectively</li>
+</ul>
 <p>To address potential endogeneity, we also employ an instrumental variable (IV) approach, using pre-pandemic broadband internet access as an instrument for remote work adoption.</p>
 </section>
 <section id="regression-results" class="level1">
